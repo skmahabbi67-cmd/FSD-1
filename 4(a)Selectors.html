@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<title>CSS Selectors</title>
+    <style>
+
+
+/* SIMPLE SELECTORS */
+    /* Element selector */
+
+	p {
+		color: green;
+	}
+
+    /* ID selector */
+
+	#mainHeading {
+		color: navy;
+		text-align: center;
+	}
+
+    /* Class selector */
+
+	.highlight {
+		background-color: lightblue;
+	}
+
+    /* Group selector */
+
+	h2, h3 {
+		color: red;
+	}
+
+    /* Universal selector */
+
+	* {
+		font-family: Arial, sans-serif;
+	}
+
+
+/* COMBINATOR SELECTORS */
+    /* Descendant selector */
+
+	div p {
+		font-style: italic;
+	}
+
+    /* Child selector */
+
+	ul > li {
+		color: brown;
+	}
+
+    /* Adjacent sibling selector */
+
+	h2 + p {
+		background-color: lavender;
+	}
+
+    /* General sibling selector */
+
+	h3 ~ p {
+		border: 1px solid black;
+	}
+
+
+/* PSEUDO-CLASS SELECTORS */
+
+	a:hover {
+		color: brown;
+	}
+	li:first-child {
+		font-weight: bold;
+	}
+
+
+/* PSEUDO-ELEMENT SELECTORS */
+
+	p::first-letter {
+		font-size: 24px;
+		color: blue;
+	}
+
+
+/* ATTRIBUTE SELECTORS */
+
+	input[type="text"] {
+		border: 5px solidblack;
+	}
+	a[target="_blank"] {
+		background-color: yellow;
+	}
+    </style>
+  </head>
+  <body>
+	<h1 id="mainHeading">CSS Selectors</h1>
+	<h2>Simple Selectors</h2>
+	  <p>HTML is the standard markup language used to create web pages.</p>
+	  <p class="highlight">CSS is used to style and design HTML documents.</p>
+	<h3>Grouped Selector</h3>
+	  <p>JavaScript adds interactivity and dynamic behavior to web pages.</p>
+	<h2>Combinator Selectors</h2>
+	<div>
+	  <p>Popular Web Technologies:</p>
+	</div>
+	<ul>
+	  <li>HTML</li>
+	  <li>CSS</li>
+	  <li>JavaScript</li>
+	</ul>
+	<h2>Adjacent Sibling</h2>
+	  <p>Bootstrap is a CSS framework for responsive web design.</p>
+	<h3>General Sibling</h3>
+	  <p>React is a JavaScript library for building user interfaces.</p>
+	  <p>Angular is a TypeScript-based front-end framework.</p>
+	<h2>Pseudo-class Selector</h2>
+	<a href="https://developer.mozilla.org/" target="_self">MDN Web Docs</a>
+	<h2>Pseudo-element Selector</h2>
+	  <p>Web development involves building and maintaining websites.</p>
+	<h2>Attribute Selector</h2>
+	  <input type="text" placeholder="Enter technology name">
+	<br><br>
+	<a href="https://www.udemy.com/course/web-developement-for-beginners-build-websites-from-scratch/?kw=web+developem&src=sac&couponCode=UDEAFFHP22025" target="_blank">Click here to Learn Web Development</a>
+  </body>
+</html>
