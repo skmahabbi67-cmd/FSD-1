@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Internal and External JS Example</title>
+
+<script>
+// Internal JavaScript
+function showMessage(){
+    document.getElementById("msg").innerHTML =
+    "Today's class is OS AND CN Lab.";
+}
+function showExternal(){
+    document.getElementById("offer").innerHTML =
+    "Canteen Offer: Buy 1 Samosa Get 1 Free!";
+}
+
+</script>
+
+</head>
+
+<body>
+
+<h2>College Notification</h2>
+
+<button onclick="showMessage()">Show Class Message</button>
+<p id="msg"></p>
+
+<br><br>
+
+<button onclick="showExternal()">Show Canteen Offer</button>
+<p id="offer"></p>
+
+<script src="external.js"></script>
+
+</body>
+</html>
+
+

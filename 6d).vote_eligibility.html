@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Student Election</title>
+</head>
+
+<body>
+
+<h2>Student Election Details</h2>
+
+<table border="1" id="table">
+<tr>
+<th>Name</th>
+<th>Age</th>
+<th>Voting Status</th>
+</tr>
+</table>
+
+<script>
+
+var name = prompt("Enter your name:");
+var age = prompt("Enter your age:");
+
+var status;
+
+if(age >= 18){
+    status = "Eligible to Vote";
+}
+else{
+    status = "Not Eligible";
+}
+
+var table = document.getElementById("table");
+
+var row = table.insertRow(1);
+row.insertCell(0).innerHTML = name;
+row.insertCell(1).innerHTML = age;
+row.insertCell(2).innerHTML = status;
+
+</script>
+
+</body>
+</html>
